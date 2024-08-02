@@ -1,0 +1,24 @@
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header-menus {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.header-menus a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
