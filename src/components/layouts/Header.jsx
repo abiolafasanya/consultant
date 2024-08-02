@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { menus, titleLogNames } from "../../data/menus";
 import { LuMenu } from "react-icons/lu";
 import { useApp } from "../../hooks/useApp";
+import { Link } from "react-router-dom";
 
 const styles = {
   header:
@@ -56,9 +57,9 @@ function MenuList() {
   return (
     <menu className="flex flex-col md:flex-row gap-3">
       {menus.map((menu, index) => (
-        <a  key={index} href={menu.url}>
+        <Link   key={index} to={menu.url}>
           {menu.name}
-        </a>
+        </Link>
       ))}
     </menu>
   );
